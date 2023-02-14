@@ -21,17 +21,13 @@ function App() {
     "My chceme ty motýle. ",
     "Ale já na něj můžu mluvit přímo, já jsem premiér! ",
     "A co jako... ",
-    "A co jako... ",
-    "A co jako... ",
-    "Proč bych vám měl sdělovat svoje příjmy, vy někomu sdělujete svoje příjmy?",
-    "Sorry jako...",
-    "Sorry jako...",
-    "Sorry jako...",
+    "Proč bych vám měl sdělovat svoje příjmy, vy někomu sdělujete svoje příjmy? ",
+    "Sorry jako... ",
     "Já sem si celý život vystačil s formulou jedna plus jedna. ",
     "Když šli do Bruselu, pan Sobotka, Bělobrádek, no tak mě tam ani nepozvali. ",
     "My chceme dát důchodcům větší peníze a oni nám to blokujou. ",
     "Zas lhal a říkal, že budu vědět, kolik piv vypije. ",
-    "Jsem voják, ne diplomat, nezavleču Česko do války! ",
+    "Jsem diplomat, ne voják, nezavleču Česko do války! ",
     "Špatně vás to naučili, zkontrolujte si ty noty z Bruselu. ",
     "Zabil lidi cez padáky!!! ",
     "Osobní přítel rodiny Assáda, pan Kalousek! ",
@@ -46,12 +42,18 @@ function App() {
     "Proč? ",
     "Mě STBáci terorizovali za to, že jsem nekupoval ze Sýrie fosfáty! ",
     "Já si vyprosim aby tady někdo mluvil o mých dětech! ",
+    "Kampaň! ",
+    "Účelovka! ",
+    "Já sem vybudoval Agrofert od nuly a zaměstnávám 35000 lidí! ",
   ];
 
   const pukeBullshit = () => {
     const finalWords = [];
     for (let i = 0; i < demagogie; i++) {
-      const randNumber = Math.floor(Math.random() * generator.length + 1);
+      let randNumber = Math.floor(Math.random() * generator.length + 1);
+      while (finalWords.includes(generator[randNumber - 1])) {
+        randNumber = Math.floor(Math.random() * generator.length + 1);
+      }
       finalWords.push(generator[randNumber - 1]);
     }
     setResult(finalWords);
@@ -69,7 +71,9 @@ function App() {
         <div className="Bubble">{result}</div>
       </div>
       <div className="Confirm">
-        <label htmlFor="demagogie">Množství demagogií:</label>
+        <label htmlFor="demagogie" className="Label">
+          Množství demagogií:
+        </label>
         <input
           type="number"
           name="demagogie"
