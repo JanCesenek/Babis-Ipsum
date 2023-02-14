@@ -8,30 +8,26 @@ function App() {
     "Prosim vás, Karlovarský kraj, stále něco říká, je to nejhorší kraj historicky ve všem. ",
     "Já sem tam býl, mezi těmi demonstrantmi! ",
     "Tak nechte mě mluvit, kurva jako, co??? ",
-    "Počkejtě, já jsem neměl mandát, kurvaaa!!! ",
+    "Počkejtě, já sem neměl mandát, kurvaaa!!! ",
     "Kalousek, symbol korupce. ",
     "By mě zajímalo kolik má zas promile. ",
     "Jo, je zas ožralej, jak obyčejně. ",
     "Nebudeš mě urážeť. ",
     "Nech to všici vidí! ",
-    "Já jsem svrchovaný premiér této země! ",
-    "Já ván len chci říct, že nikdy neodstoupím, nikdy, nech si to všichni zapamatujú! ",
+    "Já sem svrchovaný premiér této země! ",
+    "Já vám len chci říct, že nikdy neodstoupím, nikdy, nech si to všichni zapamatujú! ",
     "Nebuďte slušnej, řekněte jméno. ",
     "Váš kolega zase dělal skandál, že sem tady není... ",
     "My chceme ty motýle. ",
-    "Ale já na něj můžu mluvit přímo, já jsem premiér! ",
+    "Ale já na něj můžu mluvit přímo, já sem premiér! ",
     "A co jako... ",
-    "A co jako... ",
-    "A co jako... ",
-    "Proč bych vám měl sdělovat svoje příjmy, vy někomu sdělujete svoje příjmy?",
-    "Sorry jako...",
-    "Sorry jako...",
-    "Sorry jako...",
+    "Proč bych vám měl sdělovat svoje příjmy, vy někomu sdělujete svoje příjmy? ",
+    "Sorry jako... ",
     "Já sem si celý život vystačil s formulou jedna plus jedna. ",
     "Když šli do Bruselu, pan Sobotka, Bělobrádek, no tak mě tam ani nepozvali. ",
     "My chceme dát důchodcům větší peníze a oni nám to blokujou. ",
     "Zas lhal a říkal, že budu vědět, kolik piv vypije. ",
-    "Jsem voják, ne diplomat, nezavleču Česko do války! ",
+    "Jsem diplomat, ne voják, nezavleču Česko do války! ",
     "Špatně vás to naučili, zkontrolujte si ty noty z Bruselu. ",
     "Zabil lidi cez padáky!!! ",
     "Osobní přítel rodiny Assáda, pan Kalousek! ",
@@ -44,14 +40,20 @@ function App() {
     "Řvali a začali na mě házet lahve. ",
     "Dneska jste tam byl, jste byl nadšenej, skandovali vaše jméno. ",
     "Proč? ",
-    "Mě STBáci terorizovali za to, že jsem nekupoval ze Sýrie fosfáty! ",
+    "Mě STBáci terorizovali za to, že sem nekupoval ze Sýrie fosfáty! ",
     "Já si vyprosim aby tady někdo mluvil o mých dětech! ",
+    "Kampaň! ",
+    "Účelovka! ",
+    "Já sem vybudoval Agrofert od nuly a zaměstnávám 35000 lidí! ",
   ];
 
   const pukeBullshit = () => {
     const finalWords = [];
     for (let i = 0; i < demagogie; i++) {
-      const randNumber = Math.floor(Math.random() * generator.length + 1);
+      let randNumber = Math.floor(Math.random() * generator.length + 1);
+      while (finalWords.includes(generator[randNumber - 1])) {
+        randNumber = Math.floor(Math.random() * generator.length + 1);
+      }
       finalWords.push(generator[randNumber - 1]);
     }
     setResult(finalWords);
@@ -69,7 +71,9 @@ function App() {
         <div className="Bubble">{result}</div>
       </div>
       <div className="Confirm">
-        <label htmlFor="demagogie">Množství demagogií:</label>
+        <label htmlFor="demagogie" className="Label">
+          Množství demagogií:
+        </label>
         <input
           type="number"
           name="demagogie"

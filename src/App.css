@@ -19,13 +19,18 @@
   height: 25rem;
 }
 
+.Label {
+  font-size: 1.5rem;
+}
+
 .Bubble {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%, 10% 20%, 0% 0%);
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 10% 65%, 0% 55%, 10% 45%, 10% 0%);
   background-color: white;
   color: black;
   font-size: 1.5rem;
-  width: 50rem;
-  height: 20rem;
+  width: 40rem;
+  height: 22rem;
   margin-top: 5rem;
+  margin-left: -5rem;
   padding: 2rem 2rem 2rem 7rem;
 }
