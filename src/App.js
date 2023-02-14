@@ -15,7 +15,7 @@ function App() {
     "Nebudeš mě urážeť. ",
     "Nech to všici vidí! ",
     "Já jsem svrchovaný premiér této země! ",
-    "Já ván len chci říct, že nikdy neodstoupím, nikdy, nech si to všichni zapamtujú! ",
+    "Já ván len chci říct, že nikdy neodstoupím, nikdy, nech si to všichni zapamatujú! ",
     "Nebuďte slušnej, řekněte jméno. ",
     "Váš kolega zase dělal skandál, že sem tady není... ",
     "My chceme ty motýle. ",
@@ -33,6 +33,19 @@ function App() {
     "Zas lhal a říkal, že budu vědět, kolik piv vypije. ",
     "Jsem voják, ne diplomat, nezavleču Česko do války! ",
     "Špatně vás to naučili, zkontrolujte si ty noty z Bruselu. ",
+    "Zabil lidi cez padáky!!! ",
+    "Osobní přítel rodiny Assáda, pan Kalousek! ",
+    "Nech nám řekne jeho střet zájmů s Hábou, jak dělal Omnipol. ",
+    "Třikrát sem zažaloval Ústavní soud Slovenské republiky a já ten soud vyhraju. ",
+    "Já sem nikdy nebyl v STB... ",
+    "Já sem měl v rodině tři imigračky, mně tady nikdo nebude vykládat že som byl v STB!!! ",
+    "Já kdybych měl za sebou to, co on, tak lezu kanálami!!! ",
+    "Zloděj zlodějská. ",
+    "Řvali a začali na mě házet lahve. ",
+    "Dneska jste tam byl, jste byl nadšenej, skandovali vaše jméno. ",
+    "Proč? ",
+    "Mě STBáci terorizovali za to, že jsem nekupoval ze Sýrie fosfáty! ",
+    "Já si vyprosim aby tady někdo mluvil o mých dětech! ",
   ];
 
   const pukeBullshit = () => {
