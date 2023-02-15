@@ -45,6 +45,27 @@ function App() {
     "Kampaň! ",
     "Účelovka! ",
     "Já sem vybudoval Agrofert od nuly a zaměstnávám 35000 lidí! ",
+    "Nevidím tady nikoho, kdo by řídil velké firmy. ",
+    "Je to jenom o tých penězích. ",
+    "Ale my ho máme v programu, protože nepočítáme. ",
+    "Ent ví hef rizalts in ví fór, best in kovit... ",
+    "Já se nikam necpu, Agrofert nikdy neprodám. ",
+    "Já sem do politiky nechtěl, to vy stě mě zplodili! ",
+    "Já s tím nemám nic společného, v životě sem o tom neslyšel! ",
+    "Já vůbec nevím proč tyto lhářce dáváte tady prostor... ",
+    "Já nevim, já vám řikám, že je to manipulace a nech to vyšetří. ",
+    "Žaludek má kráva na výrobu mléka. ",
+    "Planety sluneční soustavy? Měsíc, Mars, Pluto, Saturn, co je tam ještě... Slunce? ",
+    "Já teda vůbec nevidim důvod, proč bych se měl omlouvat. ",
+    "Vláda tady rok mluví o válce a já sem mluvil o míru. ",
+    "Neni to pravda. ",
+    "No protože nám řekla ochranka, že na nás budou házet vajíčka. ",
+    "Pomoct Polsku nebo Pobaltským státům? Určitě ne, já chci mír! ",
+    "Dosáhli jsme famózní výsledek! ",
+    "Pražské Jezulátko, to funguje. ",
+    "Mě zajímá horoskop. Jsem čistá panna, urputná, pracovitá... ",
+    "No a včera jsem to, bohužel, neopatrně, řek médiím, a bylo to venku. ",
+    "Tak zavřeli kostel, já to nechápu, vždyť tam maj přístup i vrazi , aby mohli prosit o odpuštění... ",
   ];
 
   const pukeBullshit = () => {
@@ -68,11 +89,13 @@ function App() {
     <div className="App">
       <div className="FaceWithBubble">
         <img src={babis} alt="Andrejko" className="Kokotko" />
-        <div className="Bubble">{result}</div>
+        <div className="Bubble">
+          <h1>{result}</h1>
+        </div>
       </div>
       <div className="Confirm">
         <label htmlFor="demagogie" className="Label">
-          Množství demagogií:
+          Množství demagogií (1-10):
         </label>
         <input
           type="number"
