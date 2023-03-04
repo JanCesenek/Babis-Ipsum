@@ -95,7 +95,7 @@ function App() {
       </div>
       <div className="Confirm">
         <label htmlFor="demagogie" className="Label">
-          Množství demagogií (1-10):
+          Množství demagogií (1-20):
         </label>
         <input
           type="number"
@@ -104,7 +104,7 @@ function App() {
           value={demagogie}
           onChange={(e) => setDemagogie(e.target.value)}
           min="1"
-          max="10"
+          max="20"
         />
         <button onClick={pukeBullshit}>Vyblít</button>
       </div>
