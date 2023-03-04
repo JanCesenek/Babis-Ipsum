@@ -65,7 +65,7 @@ function App() {
     "Pražské Jezulátko, to funguje. ",
     "Mě zajímá horoskop. Jsem čistá panna, urputná, pracovitá... ",
     "No a včera jsem to, bohužel, neopatrně, řek médiím, a bylo to venku. ",
-    "Tak zavřeli kostel, já to nechápu, vždyť tam maj přístup i vrazi , aby mohli prosit o odpuštění... ",
+    "Tak zavřeli kostel, já to nechápu, vždyť tam maj přístup i vrazi, aby mohli prosit o odpuštění... ",
   ];
 
   const pukeBullshit = () => {
